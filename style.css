@@ -1,0 +1,88 @@
+:root {
+  --bg-dark: #0f172a;
+  --bg-light: #f1f5f9;
+  --card-dark: #1e293b;
+  --card-light: #ffffff;
+  --text-dark: #e5e7eb;
+  --text-light: #0f172a;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+header {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+}
+
+header input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+}
+
+header button {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 16px;
+}
+
+#current {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border-radius: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+#icon {
+  font-size: 64px;
+  margin: 8px 0;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+#hourlyContainer,
+#dailyContainer {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.card {
+  min-width: 90px;
+  padding: 10px;
+  border-radius: 16px;
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+}

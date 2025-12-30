@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="dark">
+
+<header>
+  <input id="cityInput" placeholder="Search city">
+  <button id="searchBtn">Search</button>
+  <button id="locBtn">📍</button>
+  <button id="modeBtn">🌙</button>
+</header>
+
+<main>
+  <section id="current">
+    <h1 id="city">—</h1>
+    <div id="icon">—</div>
+    <h2 id="temp">—</h2>
+    <p id="desc">—</p>
+
+    <div class="details">
+      <span id="feels">—</span>
+      <span id="minmax">—</span>
+      <span id="humidity">—</span>
+      <span id="pressure">—</span>
+      <span id="wind">—</span>
+      <span id="visibility">—</span>
+      <span id="sunrise">—</span>
+      <span id="sunset">—</span>
+    </div>
+  </section>
+
+  <section id="hourly" class="hidden">
+    <h3>Hourly</h3>
+    <div id="hourlyContainer"></div>
+  </section>
+
+  <section id="daily" class="hidden">
+    <h3>10-Day Forecast</h3>
+    <div id="dailyContainer"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
