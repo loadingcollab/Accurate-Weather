@@ -1,8 +1,21 @@
 {
-  "name": "Weather App",
+  "name": "Accurate Weather",
   "short_name": "Weather",
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#2563eb"
+  "background_color": "#4A90E2",
+  "theme_color": "#4A90E2",
+  "description": "Modern weather app with accurate forecasts",
+  "icons": [
+    {
+      "src": "icon-192.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icon-512.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
 }
